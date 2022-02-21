@@ -430,3 +430,9 @@ a {
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
 }
+
+@media screen and (max-width: 1072px) {
+  .info-single-project {
+    font-size: 100%;
+  }
+}
