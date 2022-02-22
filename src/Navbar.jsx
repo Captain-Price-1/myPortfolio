@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -18,9 +19,9 @@ const Navbar = () => {
           <p className="name">Anas Parwez</p>
         </span>
         <ul className="nav-ul">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact Me</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/">Contact Me</Link>
         </ul>
         <div className="burger">
           <GiHamburgerMenu

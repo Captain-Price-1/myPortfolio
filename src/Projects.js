@@ -4,6 +4,7 @@ import { useState } from "react";
 import ProjectsData from "./Projects-data";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { FaCode } from "react-icons/fa";
+// import { motion } from "framer-motion";
 
 const Projects = () => {
   const categories = ["Small Projects", "Medium Projects", "Large Projects"];
@@ -17,7 +18,12 @@ const Projects = () => {
   };
 
   return (
-    <section className="projects-section">
+    <motion.section
+      className="projects-section"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="projects-info">
         <div className="project-header">
           <h1 className="project-heading">My Projects</h1>
@@ -75,7 +81,7 @@ const Projects = () => {
           {/* </div> */}
         </TransitionGroup>
       </div>
-    </section>
+    </motion.section>
   );
 };
 export default Projects;

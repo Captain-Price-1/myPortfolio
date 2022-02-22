@@ -8,7 +8,7 @@ const Introduction = () => {
       className="introduction-section"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      // transition={{ delay: 0.5 }}
     >
       <div className="home-intro">
         <div className="static-text">
