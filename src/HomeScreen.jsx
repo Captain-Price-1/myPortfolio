@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   const containerVariants = {
     hidden: {
-      x: "-100vw",
+      x: "0",
       opacity: 0,
     },
     visible: {

@@ -4,7 +4,7 @@ import "./about.css";
 const AboutPage = () => {
   const containerVariants = {
     hidden: {
-      x: "100vw",
+      x: "0",
       opacity: 0,
     },
     visible: {
@@ -13,7 +13,7 @@ const AboutPage = () => {
       transition: { duration: 0.5 },
     },
     exit: {
-      x: "100vw",
+      x: "-100vw",
       transition: { ease: "easeInOut" },
     },
   };
@@ -24,7 +24,7 @@ const AboutPage = () => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="about-page-main-div"
+      className="about-page-main"
     >
       <div className="about-me">
         <div className="about-heading">
@@ -40,6 +40,15 @@ const AboutPage = () => {
         </div>
       </div>
     </motion.div>
+    // <motion.div
+    //   variants={containerVariants}
+    //   initial="hidden"
+    //   animate="visible"
+    //   className="test"
+    //   exit="exit"
+    // >
+    //   <h1>this is or</h1>
+    // </motion.div>
   );
 };
 export default AboutPage;

@@ -10,17 +10,21 @@ import {
 import About from "./about";
 import Home from "./HomeScreen";
 import { AnimatePresence } from "framer-motion";
+import Container from "./Change";
 function App() {
   const location = useLocation();
   return (
-    <AnimatePresence initial={false}>
-      <Switch location={location} key={location.pathname}>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/" children={<Home />} exact />
-      </Switch>
-    </AnimatePresence>
+    <>
+      <Navbar />
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/" children={<Home />} />
+        </Switch>
+      </AnimatePresence>
+    </>
   );
 }
 

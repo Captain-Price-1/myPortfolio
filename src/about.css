@@ -5,20 +5,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+.test {
+  /* margin-top: 10rem; */
+  color: white;
+}
 
-.about-page-main-div {
-  height: 100vh;
+.about-page-main {
+  overflow: hidden;
+  height: 90vh;
   width: 100vw;
   /* font-size: 4rem; */
   background: url("/public/_22_dark-water-wallpapers_1821027465.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 2rem;
+  /* margin-top: 5rem; */
   /* object-fit: cover; */
   color: white;
 }
 .about-heading {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   font-size: 2rem;
 }
 .about-detail {
@@ -33,17 +38,17 @@
   justify-content: center;
   flex-direction: column;
 }
-@media screen and (max-width: 664px) {
+/* @media screen and (max-width: 664px) {
   .about-me {
     padding: 0.5rem;
     margin: 1rem;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     width: 70%;
-  }
-  .about-heading {
+  } */
+/* .about-heading {
     font-size: 1rem;
   }
   .about-detail {
     font-size: calc(3vw + 0.5rem);
   }
-}
+} */
