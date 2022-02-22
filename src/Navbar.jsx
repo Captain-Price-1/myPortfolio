@@ -34,9 +34,9 @@ const Navbar = () => {
       </div>
       <div className={`drop-ul ${show && "active"}`}>
         <ul>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/">Contact Me</Link>
         </ul>
       </div>
     </section>
