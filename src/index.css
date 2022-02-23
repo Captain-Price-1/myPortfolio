@@ -114,7 +114,14 @@ a {
   margin-top: 2rem;
   height: 0;
   overflow: hidden;
-  background: black;
+  /* background: black;
+   */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
   color: aquamarine;
   transition: all 0.1s ease;
   display: flex;

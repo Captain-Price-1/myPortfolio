@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./about.css";
 import Skill from "./Skill";
-
+import Typewriter from "typewriter-effect";
 const AboutPage = () => {
   const containerVariants = {
     hidden: {
@@ -29,27 +29,28 @@ const AboutPage = () => {
     >
       <div className="about-me">
         <div className="about-heading">
-          <h1>About Me</h1>
+          <h1 className="me">About Me</h1>
         </div>
         <div className="about-detail">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            quo eum nemo dolorem. Sed aspernatur possimus quae eveniet
-            consequuntur voluptas et aut architecto, ducimus ipsum magnam iste
-            placeat. Laboriosam, natus.
+            Hi, I am Anas Parwez. I am a front-end developer who specializes in
+            ReactJs Currently I am in last year of my Bachelors degree. I love
+            making new websites using React with a spice of animations within
+            them.
           </p>
         </div>
       </div>
       <h4>My Skills</h4>
       <section className="skillset-main-section">
         {Skill.map((skill, index) => {
-          const { name, value } = skill;
+          const { name, value, img } = skill;
           return (
             <div className="skillset-container">
               <div className="individual-skill">
                 <div className="skill-info">
                   <div className="skill-name">
                     <p>{name}</p>
+                    {/* <img src={img} className="skill-img" alt="" /> */}
                     <p>{value}</p>
                   </div>
                 </div>

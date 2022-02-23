@@ -40,6 +40,9 @@
   flex-direction: column;
   height: 80vh;
 }
+.about-me p {
+  width: 60%;
+}
 .skill-bar {
   overflow: hidden;
   height: 1.5rem;
@@ -66,17 +69,30 @@
   gap: 2rem;
 }
 h4 {
+  letter-spacing: 0.02in;
+  text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
+  font-family: Montserrat, sans-serif;
 }
 .skill-name {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 1rem;
+  letter-spacing: 0.02in;
+  /* color: aqua; */
 }
 .skillset-container {
   overflow: hidden;
-  height: 3rem;
+  height: 5rem;
+}
+.skill-img {
+  width: 40px;
+  height: 30px;
+}
+.me {
+  color: aqua;
 }
 
 @media screen and (max-width: 664px) {
@@ -90,10 +106,19 @@ h4 {
     /* background-color: aquamarine; */
     width: 100%;
   }
+  .about-me p {
+    width: 100%;
+  }
   .about-heading {
     font-size: 1rem;
   }
   .about-detail {
     font-size: calc(3vw + 0.5rem);
+  }
+}
+@media screen and (min-width: 980px) {
+  .about-detail {
+    font-family: Montserrat, sans-serif;
+    line-height: 2;
   }
 }
