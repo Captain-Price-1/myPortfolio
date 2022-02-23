@@ -41,11 +41,11 @@
   height: 80vh;
 }
 .skill-bar {
-  /* overflow: hidden; */
+  overflow: hidden;
   height: 1.5rem;
   border-radius: 0.6rem;
   background: white;
-  border: 2px solid aqua;
+  border: 1px solid aqua;
 }
 .skill-bar-filled {
   /* border: 6px solid black; */
@@ -55,7 +55,7 @@
   background: url("https://acegif.com/wp-content/gifs/water-12.gif");
   background-size: auto, auto, cover;
   background-repeat: no-repeat;
-  border-right: 2px solid aqua;
+  border-right: 1.5px solid aqua;
 }
 .skillset-main-section {
   padding: 1.5rem;
@@ -87,7 +87,7 @@ h4 {
     margin-left: 0;
     margin-right: 0;
     height: 60vh;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     width: 100%;
   }
   .about-heading {
