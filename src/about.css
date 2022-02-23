@@ -12,12 +12,10 @@
 
 .about-page-main {
   overflow: hidden;
-  height: 90vh;
-  width: 100vw;
+  /* height: 90vh; */
+  /* width: ; */
   /* font-size: 4rem; */
-  background: url("/public/_22_dark-water-wallpapers_1821027465.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+
   /* margin-top: 5rem; */
   /* object-fit: cover; */
   color: white;
@@ -30,25 +28,71 @@
   font-size: 1.5rem;
 }
 .about-me {
-  width: 50%;
-  padding: 1rem;
-  margin: 2rem;
+  background: url("/public/_22_dark-water-wallpapers_1821027465.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 2rem;
+  /* margin: 2rem; */
   display: flex;
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
+  height: 80vh;
 }
-/* @media screen and (max-width: 664px) {
+.skill-bar {
+  /* overflow: hidden; */
+  height: 1.5rem;
+  border-radius: 0.6rem;
+  background: white;
+}
+.skill-bar-filled {
+  /* border: 6px solid black; */
+  height: 100%;
+  border-radius: 0.5rem;
+  /* background: url("https://i.pinimg.com/originals/78/ad/64/78ad647054f3994563beaaf448683df8.gif"); */
+  background: url("https://i.pinimg.com/originals/a5/8e/9d/a58e9d69f4e461902cb80b7e2c4bf016.gif");
+  /* background-size: cover; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.skillset-main-section {
+  padding: 1.5rem;
+  background-color: black;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+h4 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.skill-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skillset-container {
+  overflow: hidden;
+  height: 3rem;
+}
+
+@media screen and (max-width: 664px) {
   .about-me {
-    padding: 0.5rem;
-    margin: 1rem;
+    padding: 1rem;
+    /* margin: 2rem; */
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    height: 60vh;
     background-color: aquamarine;
-    width: 70%;
-  } */
-/* .about-heading {
+    width: 100%;
+  }
+  .about-heading {
     font-size: 1rem;
   }
   .about-detail {
     font-size: calc(3vw + 0.5rem);
   }
-} */
+}

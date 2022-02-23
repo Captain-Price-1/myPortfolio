@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./about.css";
+import Skill from "./Skill";
 
 const AboutPage = () => {
   const containerVariants = {
@@ -39,16 +40,31 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
+      <h4>My Skills</h4>
+      <section className="skillset-main-section">
+        {Skill.map((skill, index) => {
+          const { name, value } = skill;
+          return (
+            <div className="skillset-container">
+              <div className="individual-skill">
+                <div className="skill-info">
+                  <div className="skill-name">
+                    <p>{name}</p>
+                    <p>{value}</p>
+                  </div>
+                </div>
+                <div className="skill-bar">
+                  <div
+                    className="skill-bar-filled"
+                    style={{ width: `${value}%` }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </section>
     </motion.div>
-    // <motion.div
-    //   variants={containerVariants}
-    //   initial="hidden"
-    //   animate="visible"
-    //   className="test"
-    //   exit="exit"
-    // >
-    //   <h1>this is or</h1>
-    // </motion.div>
   );
 };
 export default AboutPage;
