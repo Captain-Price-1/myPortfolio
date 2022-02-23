@@ -45,16 +45,17 @@
   height: 1.5rem;
   border-radius: 0.6rem;
   background: white;
+  border: 2px solid aqua;
 }
 .skill-bar-filled {
   /* border: 6px solid black; */
   height: 100%;
   border-radius: 0.5rem;
   /* background: url("https://i.pinimg.com/originals/78/ad/64/78ad647054f3994563beaaf448683df8.gif"); */
-  background: url("https://i.pinimg.com/originals/a5/8e/9d/a58e9d69f4e461902cb80b7e2c4bf016.gif");
-
+  background: url("https://acegif.com/wp-content/gifs/water-12.gif");
   background-size: auto, auto, cover;
   background-repeat: no-repeat;
+  border-right: 2px solid aqua;
 }
 .skillset-main-section {
   padding: 1.5rem;
