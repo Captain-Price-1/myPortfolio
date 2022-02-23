@@ -34,9 +34,15 @@ const Navbar = () => {
       </div>
       <div className={`drop-ul ${show && "active"}`}>
         <ul>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/">Contact Me</Link>
+          <Link to="/" onClick={() => setShow(!show)}>
+            Home
+          </Link>
+          <Link to="/about" onClick={() => setShow(!show)}>
+            About
+          </Link>
+          <Link to="/" onClick={() => setShow(!show)}>
+            Contact Me
+          </Link>
         </ul>
       </div>
     </section>

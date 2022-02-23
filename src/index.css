@@ -116,7 +116,7 @@ a {
   overflow: hidden;
   background: black;
   color: aquamarine;
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
   display: flex;
   background: black;
   flex-direction: column;
@@ -418,7 +418,7 @@ a {
   }
   .active {
     height: 8.8rem;
-    transition: all 0.5s ease;
+    transition: all 0.1s ease;
   }
 }
 @media screen and (max-width: 916px) {
