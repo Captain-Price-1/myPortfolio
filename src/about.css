@@ -52,8 +52,8 @@
   border-radius: 0.5rem;
   /* background: url("https://i.pinimg.com/originals/78/ad/64/78ad647054f3994563beaaf448683df8.gif"); */
   background: url("https://i.pinimg.com/originals/a5/8e/9d/a58e9d69f4e461902cb80b7e2c4bf016.gif");
-  /* background-size: cover; */
-  background-size: cover;
+
+  background-size: auto, auto, cover;
   background-repeat: no-repeat;
 }
 .skillset-main-section {
