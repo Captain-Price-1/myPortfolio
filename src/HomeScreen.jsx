@@ -15,7 +15,7 @@ const Home = () => {
     },
     exit: {
       x: "-100vw",
-      transition: { ease: "easeInOut" },
+      transition: { ease: "easeInOut", duration: 0.15 },
     },
   };
   return (
