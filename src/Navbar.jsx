@@ -21,7 +21,7 @@ const Navbar = () => {
         <ul className="nav-ul">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
-          <Link to="/">Contact Me</Link>
+          <Link to="/contact">Contact Me</Link>
         </ul>
         <div className="burger">
           <GiHamburgerMenu
@@ -40,7 +40,7 @@ const Navbar = () => {
           <Link to="/about" onClick={() => setShow(!show)}>
             About
           </Link>
-          <Link to="/" onClick={() => setShow(!show)}>
+          <Link to="/contact" onClick={() => setShow(!show)}>
             Contact Me
           </Link>
         </ul>

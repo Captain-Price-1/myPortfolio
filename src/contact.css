@@ -1,0 +1,14 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-main-div {
+  height: 100vh;
+  margin-top: 2rem;
+  background: white;
+  color: black;
+}
