@@ -25,15 +25,17 @@ const Contact = () => {
       exit="exit"
       className="contact-main-div"
     >
-      <h3>Contact Me</h3>
-      <form>
-        <label>Name</label>
-        <input type="text" name="user_name" id="" />
-        <label>Email</label>
-        <input type="text" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" type="submit"></textarea>
-      </form>
+      <div className="form-modal">
+        <h3>Contact Me</h3>
+        <form className="form-main">
+          <label>Name</label>
+          <input type="text" name="user_name" id="" />
+          <label>Email</label>
+          <input type="text" name="user_email" />
+          <label>Message</label>
+          <textarea name="message" type="submit"></textarea>
+        </form>
+      </div>
     </motion.div>
   );
 };
