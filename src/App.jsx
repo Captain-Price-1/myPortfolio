@@ -16,7 +16,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence
+        exitBeforeEnter
+        onExitComplete={() => {
+          if (typeof window !== "undefined") {
+            window.scrollTo({ top: 0 });
+          }
+        }}
+      >
         <Switch location={location} key={location.pathname}>
           <Route path="/about">
             <About />
