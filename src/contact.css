@@ -7,9 +7,14 @@
 }
 
 .contact-main-div {
+  /* background: url("/public/black-aqua.jpg"); */
+  background: url("/public/_22_dark-water-wallpapers_1821027465.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
   height: 100vh;
   /* margin-top: 2rem; */
-  background: white;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,35 +25,71 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
 }
 .form-main {
+  font-weight: 300;
+  font-size: 1.5rem;
   margin: 2rem;
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
   flex-direction: column;
-  min-width: 60%;
+  width: 100%;
 }
-.form-modal h3 {
+.container-form h3 {
+  letter-spacing: 0.03in;
+  font-weight: 300;
+  text-align: center;
   font-size: 2.5rem;
 }
 .form-modal {
   font-size: 1.5rem;
 }
 input {
-  padding: 0.4rem;
+  padding: 0.2rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   width: 100%;
 }
 textarea {
+  margin-top: 00.2rem;
   /* width: 30%; */
-  padding: 0.4rem;
+  padding: 0.2rem;
   resize: none;
 }
-@media screen and (min-width: 670px) {
+.submit-btn {
+  /* width: 20%; */
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.02in;
+  border: none;
+  background: aqua;
+  color: black;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+.container-form {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  min-width: 40vw;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 0.3rem;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 670px) {
+  .container-form {
+    min-width: 40vw;
+  }
   .form-main {
-    min-width: 40%;
+    font-size: 1rem;
   }
 }

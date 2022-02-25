@@ -25,7 +25,7 @@ const Contact = () => {
       exit="exit"
       className="contact-main-div"
     >
-      <div className="form-modal">
+      <div className="container-form">
         <h3>Contact Me</h3>
         <form className="form-main">
           <label>Name</label>
@@ -35,6 +35,7 @@ const Contact = () => {
           <label>Message</label>
           <textarea name="message" type="submit"></textarea>
         </form>
+        <button className="submit-btn">Submit</button>
       </div>
     </motion.div>
   );
